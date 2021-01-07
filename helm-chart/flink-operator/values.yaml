@@ -43,6 +43,10 @@ resources:
     cpu: 100m
     memory: 128Mi
 
+admissionControl:
+  certManager:
+    enabled: true
+
 # Annotations to be added to pods
 podAnnotations: {}
 

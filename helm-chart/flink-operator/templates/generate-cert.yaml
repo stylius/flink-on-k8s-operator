@@ -1,4 +1,4 @@
-{{- if .Values.rbac.create }}
+{{- if and (.Values.rbac.create) (not .Values.admissionControl.certManager.enabled) }}
 apiVersion: v1
 kind: ConfigMap
 metadata:
